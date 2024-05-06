@@ -1,0 +1,29 @@
+.Nav-hover {
+    @apply relative hover:scale-95 transition-all cursor-pointer 
+}
+
+.Nav-hover::before {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: -5px;
+    right: -2px;
+    width: 0;
+    border-radius: 9999px;
+    height: 4px;
+    background-image:linear-gradient(to bottom right, #3b82f6, #93c5fd);
+    transition: width 0.3s ease-out;
+}
+
+.Nav-hover:hover::before {
+    width: 120%;
+}
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 100px;
+  transform: translateX(-0%);
+  will-change: transform;
+}
