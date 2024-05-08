@@ -4,7 +4,7 @@ import Page from "./pagedropMenu";
 const NavItems = () => {
 
     return ( 
-        <ul className="flex gap-5 max-md:flex-col items-center">
+        <ul className="flex gap-5 max-md:flex-col items-center font-bold">
         <li className="Nav-hover">Home</li>
         <li className="Nav-hover">About</li>
         <Page/>
