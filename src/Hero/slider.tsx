@@ -34,7 +34,7 @@ const Slider = () => {
     return (
       <div className=" w-full h-full">
 
-        <div className=" relative flex justify-center items-center w-full h-full transition-transform duration-500">
+        <div className="relative flex justify-center items-center w-full h-full">
           <img
             src={images[currentIndex]}
             alt={`Slide ${currentIndex + 1}`}

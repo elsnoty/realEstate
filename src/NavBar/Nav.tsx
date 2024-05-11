@@ -20,7 +20,7 @@ const Nav = () => {
     }, []);
 
     return ( 
-        <nav className={`px-20 py-3 max-md:px-5 fixed z-50 w-full duration-300 ${scrolling ? 'bg-white' : ''}`}>
+        <nav className={`px-20 py-3 max-md:px-5  z-50 w-full duration-300 ${scrolling ? 'bg-white fixed' : 'relative'}`}>
             <NavBar />
         </nav>
      );
