@@ -1,7 +1,7 @@
 import React, { createContext, useContext } from 'react';
 import Products from './data';
 
-interface Product {
+export interface Product {
   id: number;
   image: string;
   country: string;

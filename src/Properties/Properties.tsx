@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useProductContext } from '../data/ProductContext';
 import FilterProduct, { Filter } from './filterProperty';
+import { Link } from 'react-router-dom';
 
 const ProductList = () => {
   const { products } = useProductContext();
@@ -40,11 +41,11 @@ const ProductList = () => {
             <div className='font-bold text-4xl'>No properties found.</div>
           ) : (
             filteredProducts.map((product) => (
-              <div key={product.id} className='bg-gray-200 rounded-xl p-2 hover:scale-95   transition-all duration-500'>
+              <Link to={`/DetailsProperty/${product.id}`} key={product.id} className='bg-gray-200 rounded-xl p-2 hover:scale-95   transition-all duration-500'>
                 <img src={product.image} className='rounded-xl'/>
                 <p>Country: {product.country}</p>
                 <p>Price: ${product.price}</p>
-              </div>
+              </Link>
             ))
           )}
         </div>
