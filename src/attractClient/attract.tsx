@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Attract = () => {
     return ( 
-        <div className="px-28 text-center py-10 max-lg:px-16 max-sm:px-10 max-md:flex-col">
+        <div className="px-28 text-center py-10 max-lg:px-16 max-sm:px-10 max-md:flex-col bg-gray-100">
         <div>
             <h1 className="text-4xl font-bold pb-2">Why You Should Work With Us</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>

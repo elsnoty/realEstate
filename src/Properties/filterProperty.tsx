@@ -67,7 +67,7 @@ const FilterProduct: React.FC<FilterProductProps> = ({ onFilter }) => {
     return (
         <>
         <div className="py-10 text-center">
-            <h1 className="text-4xl">Why You Should Work With Us</h1>
+            <h1 className="text-4xl my-4">Featured Properties</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
         <div className="px-24 flex flex-wrap justify-between font-semibold max-md:px-7">

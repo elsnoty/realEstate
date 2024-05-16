@@ -28,7 +28,7 @@ const Cities = () => {
     const [hoveredIndex, setHoveredIndex] = useState(-1);
 
     return (
-        <div className="py-10 bg-gradient-to-r from-blue-400 to-slate-600">
+        <div className="py-10 px-5 bg-gradient-to-r from-blue-400 to-slate-600">
         <div className="text-center py-5">
             <h1 className="text-3xl">Find Properties in These Cities</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>

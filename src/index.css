@@ -39,3 +39,32 @@ img{
   ::-webkit-scrollbar-thumb:hover {
     background: #b30000; 
   }
+
+  /* contact hover*/
+
+  .icon-container {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50%;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.hover-icon {
+    transition: transform 0.3s;
+}
+
+.animate-icon {
+    animation: rotateTranslate 2s linear forwards;
+}
+
+@keyframes rotateTranslate {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    50% {
+        transform: translate(60px, -30px) rotate(180deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(360deg);
+    }
+}
