@@ -20,7 +20,7 @@ const PropDetails = () => {
 
     return (
         <div className="flex flex-col min-h-screen">
-            <div className="bg-blue-200">
+            <div className="">
                 <Nav />
             </div>
             <div className="flex-grow px-16 relative py-7 flex gap-5 justify-evenly max-md:px-8 max-md:flex-wrap">

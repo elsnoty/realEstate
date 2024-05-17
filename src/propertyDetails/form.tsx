@@ -1,8 +1,8 @@
-import client from "../assets/client.jpg"
+  import client from "../assets/client.jpg"
 const ModernForm = () => {
 
   return (
-    <div className="min-w-[370px] max-sm:min-w-[auto] bg-white p-5 border rounded-xl">
+    <div className="w-full lg:max-w-[350px] bg-white p-5 border rounded-xl">
       <div>
         <img src={client} alt="" className='rounded-full w-[100px] h-[100px] border-[10px]'/>
         <p className='text-purple-600 underline cursor-pointer pb-2'>View Listing</p>
