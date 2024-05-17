@@ -3,8 +3,8 @@ import { useProductContext } from "../data/ProductContext";
 import ModernForm from "./form";
 import { faBed, faBath } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Nav from "../NavBar/Nav";
 import Footer from "../Footer/Footer";
+import NavBar from "../NavBar/NavBar";
 
 const PropDetails = () => {
     const { id } = useParams<{ id: string }>();
@@ -20,8 +20,8 @@ const PropDetails = () => {
 
     return (
         <div className="flex flex-col min-h-screen">
-            <div className="">
-                <Nav />
+            <div className="px-20 py-3 max-md:px-5 max-md:py-0">
+                <NavBar />
             </div>
             <div className="flex-grow px-16 relative py-7 flex gap-5 justify-evenly max-md:px-8 max-md:flex-wrap">
                 <div className="shadow-2xl p-5 rounded-xl w-[600px]">
