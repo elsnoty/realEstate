@@ -2,6 +2,9 @@ import { useState } from 'react';
 import { useProductContext } from '../data/ProductContext';
 import FilterProduct, { Filter } from './filterProperty';
 import { Link } from 'react-router-dom';
+import { faBed } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBath } from '@fortawesome/free-solid-svg-icons/faBath';
 
 const ProductList = () => {
   const { products } = useProductContext();
@@ -41,10 +44,20 @@ const ProductList = () => {
             <div className='font-bold text-4xl'>No properties found.</div>
           ) : (
             filteredProducts.map((product) => (
-              <Link to={`/DetailsProperty/${product.id}`} key={product.id} className='bg-gray-200 rounded-xl p-2 hover:scale-95   transition-all duration-500'>
+              <Link to={`/DetailsProperty/${product.id}`} key={product.id} className='shadow-2xl p-5 rounded-xl hover:scale-95   transition-all duration-500'>
                 <img src={product.image} className='rounded-xl'/>
-                <p>Country: {product.country}</p>
-                <p>Price: ${product.price}</p>
+                <p className='py-2'>Location: {product.country}</p>
+                <p className=''>Price: ${product.price}</p>
+                <div className='flex gap-5 pt-2'>
+                  <div className='flex gap-2'>
+                    <FontAwesomeIcon icon={faBed}/>
+                    <p>5 Bed</p>
+                  </div>
+                  <div className='flex gap-2'>
+                  <FontAwesomeIcon icon={faBath} />
+                    <p>4 Bath</p>
+                  </div>
+                </div>
               </Link>
             ))
           )}

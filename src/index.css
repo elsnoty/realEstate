@@ -35,10 +35,6 @@ img{
     border-radius: 10px;
   }
   
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #b30000; 
-  }
 
   /* contact hover*/
 
@@ -68,3 +64,5 @@ img{
         transform: translate(0, 0) rotate(360deg);
     }
 }
+
+

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import logo from "../assets/logo.svg fill.svg"
 import NavItems from "./navitems";
 import NavIcon from "./icon";
+import { Link } from "react-router-dom";
 const NavBar = () => {
     const [width, setWidth] = useState(window.innerWidth);
 
@@ -17,8 +18,10 @@ const NavBar = () => {
         };
       }, []);
     return ( 
-        <div className="flex justify-between">
-        <img src={logo} alt="" className="cursor-pointer"/>
+        <div className="flex justify-between items-center">
+          <Link to={"/"}>
+            <img src={logo} alt="" className="cursor-pointer"/>
+          </Link>
 {
     width > 768 ?
     <NavItems />

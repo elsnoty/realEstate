@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger)
 function SmoothScrolling({ children }: { children: React.ReactNode }) {
   const lenisOptions = {
     lerp: 0.1,
-    duration: 5,
+    duration: 4,
     smoothTouch: false, 
     smooth: true,
   };

@@ -1,30 +1,13 @@
-// src/ModernForm.tsx
-import React, { useState } from 'react';
-
-const ModernForm: React.FC = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prevState => ({
-      ...prevState,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    // You can handle form submission here
-    console.log(formData);
-  };
+import client from "../assets/client.jpg"
+const ModernForm = () => {
 
   return (
-    <div className="max-w-md mx-auto">
-      <form onSubmit={handleSubmit} className="space-y-6">
+    <div className="min-w-[370px] max-sm:min-w-[auto] bg-white p-5 border rounded-xl">
+      <div>
+        <img src={client} alt="" className='rounded-full w-[100px] h-[100px] border-[10px]'/>
+        <p className='text-purple-600 underline cursor-pointer pb-2'>View Listing</p>
+      </div>
+      <form className="space-y-6">
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-gray-700">
             Name
@@ -34,9 +17,7 @@ const ModernForm: React.FC = () => {
             name="name"
             id="name"
             autoComplete="name"
-            value={formData.name}
-            onChange={handleChange}
-            className="mt-1 p-2 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+            className="mt-1 p-2 block w-full border resize-none rounded-md shadow-sm "
           />
         </div>
         <div>
@@ -48,9 +29,7 @@ const ModernForm: React.FC = () => {
             name="email"
             type="email"
             autoComplete="email"
-            value={formData.email}
-            onChange={handleChange}
-            className="mt-1 p-2 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+            className="mt-1 p-2 block w-full  border resize-none rounded-md shadow-sm "
           />
         </div>
         <div>
@@ -60,16 +39,15 @@ const ModernForm: React.FC = () => {
           <textarea
             id="message"
             name="message"
-            rows={4}
-            value={formData.message}
-            onChange={handleChange}
-            className="mt-1 p-2 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+
+            className="mt-1 p-2 block w-full border resize-none rounded-md shadow-sm "
           ></textarea>
         </div>
         <div>
           <button
             type="submit"
-            className="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            className="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-white
+            bg-indigo-600 hover:scale-95 duration-300"
           >
             Submit
           </button>

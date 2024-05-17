@@ -1,3 +1,4 @@
+import Footer from "../Footer/Footer";
 import Slider from "../Hero/slider";
 import Nav from "../NavBar/Nav";
 import FilterProp from "../Properties/Properties";
@@ -19,6 +20,7 @@ const Home = () => {
         <Sponsers />
         <TeamExperts />
         <Contact />
+        <Footer />
         </>
      );
 }
