@@ -44,12 +44,12 @@ const ModernForm = () => {
           ></textarea>
         </div>
         <div>
-          <button
+          <div
             className="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-white
-            bg-indigo-600 hover:scale-95 duration-300"
+            bg-indigo-600 hover:scale-95 duration-300 cursor-pointer text-center"
           >
             Submit
-          </button>
+          </div>
         </div>
       </form>
     </div>
