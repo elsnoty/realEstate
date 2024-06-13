@@ -45,7 +45,6 @@ const ModernForm = () => {
         </div>
         <div>
           <button
-            type="submit"
             className="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-white
             bg-indigo-600 hover:scale-95 duration-300"
           >
